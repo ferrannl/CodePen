@@ -1,0 +1,109 @@
+<!doctype html>
+<!--[if lte IE 9]>
+<html lang="en" class="oldie">
+<![endif]-->
+<!--[if gt IE 9]><!-->
+<html lang="en">
+<!--<![endif]-->
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+  <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="mP7Bc18jVD2bO1N5lTyEG50Va3uJZHH3ZKpby4_96tIm4jfetMRpUZbH0S3NS21qBuD1q64AEYE8Q05HuahZiA" />
+
+  
+
+    <!--
+Copyright (c) 2025 by ferrannl (https://codepen.io/ferrannl/pen/OPMPjmx)
+Fork of an original work Realtime scratching DJ turntable  (https://codepen.io/pimskie/pen/bGjMdxV
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the &quot;Software&quot;), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+
+-->
+
+
+  <title>Realtime scratching DJ turntable </title>
+
+  <link rel="stylesheet" href="https://cpwebassets.codepen.io/assets/fullpage/fullpage-3f5d2eba435c38fad3be0c972eb70c6c30f714f251dc2d2c8e6968c30ce359f4.css" />
+  <link rel="stylesheet" href="https://cpwebassets.codepen.io/assets/global/global-19ddb0f80234853b7943f7ea69818aa81681290571a1500304d834d74bfa391a.css" media="all" />
+  <link rel="stylesheet" href="https://cpwebassets.codepen.io/assets/packs/css/everypage-c48f024c.css" />
+  <link rel="stylesheet" href="https://cpwebassets.codepen.io/assets/page/page-f0d7b495e63e1bc150e9d461c0ba20300ce8893aeb3cbf80995b95271e4720ae.css" media="all" />
+  <link rel="stylesheet" href="https://cpwebassets.codepen.io/assets/editor/editor-74e9b05132d1286c2791b1bfde8ed3c2f6517e22230829453b1c02fc6fe88b04.css" media="all" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap" rel="stylesheet">
+      <meta name="twitter:title" content="Realtime scratching DJ turntable ">
+    <meta name="twitter:description" content="We all seen turntables on which you can scratch. But when you do, a &quot;scratch-effect.mp3&quot; simply plays.   This is a realtime interactive turntable on wh...">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://shots.codepen.io/username/pen/OPMPjmx-800.jpg?version=1758465825">
+
+
+    <meta property="og:image" content="https://shots.codepen.io/username/pen/OPMPjmx-800.jpg?version=1758465825" itemprop="thumbnailUrl">
+    <meta property="og:title" content="Realtime scratching DJ turntable ">
+    <meta property="og:url" content="https://codepen.io/ferrannl/details/OPMPjmx">
+    <meta property="og:description" content="We all seen turntables on which you can scratch. But when you do, a &quot;scratch-effect.mp3&quot; simply plays.   This is a realtime interactive turntable on wh...">
+
+
+  <link rel="alternate" type="application/json+oembed"
+  href="https://codepen.io/api/oembed?url=https%3A%2F%2Fcodepen.io%2Fferrannl%2Fpen%2FOPMPjmx&format=json"
+  title="Realtime scratching DJ turntable " />
+
+  
+
+    <link rel="apple-touch-icon" type="image/png" href="https://cpwebassets.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png" />
+
+    <meta name="apple-mobile-web-app-title" content="CodePen">
+
+    <link rel="icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico" />
+
+    <link rel="mask-icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-b4b4269c16397ad2f0f7a01bcdf513a1994f4c94b8af2f191c09eb0d601762b1.svg" color="#111" />
+
+
+
+</head>
+
+<body class="fullpage logged-out">
+
+  <header id="main-header" class="main-header"></header>
+
+  <div class="oldie-header">
+    <a href="https://codepen.io/ferrannl/pen/OPMPjmx?anon=true&amp;view=pen">Edit Pen</a>
+  </div>
+
+  <div id="result-iframe-wrap" role="main">
+
+    <iframe
+      id="result"
+      src="https://codepen.io/ferrannl/fullpage/OPMPjmx?anon=true&amp;view=fullpage"
+      sandbox="allow-downloads allow-forms allow-modals allow-pointer-lock allow-popups allow-popups-to-escape-sandbox allow-presentation allow-same-origin allow-scripts allow-top-navigation-by-user-activation" allow="accelerometer *; ambient-light-sensor *; camera *; display-capture *; encrypted-media *; geolocation *; gyroscope *; microphone *; midi *; payment *; serial *; vr *; web-share *; xr-spatial-tracking *" allowTransparency="true"
+      allowpaymentrequest="true" allowfullscreen="true" class="result-iframe" loading="lazy"></iframe>
+
+  </div>
+
+  <div id="pen-ad"></div>
+
+   <textarea id="init-data" style="display:none">{&quot;__browser&quot;:{&quot;country&quot;:&quot;NL&quot;,&quot;device&quot;:&quot;unknown_device&quot;,&quot;mobile&quot;:false,&quot;name&quot;:&quot;ie&quot;,&quot;platform&quot;:&quot;pc&quot;,&quot;version&quot;:&quot;11&quot;},&quot;__constants&quot;:{},&quot;__CPDATA&quot;:{&quot;domain_iframe&quot;:&quot;https://cdpn.io&quot;,&quot;environment&quot;:&quot;production&quot;,&quot;host&quot;:&quot;codepen.io&quot;,&quot;iframe_allow&quot;:&quot;accelerometer *; ambient-light-sensor *; camera *; display-capture *; encrypted-media *; geolocation *; gyroscope *; microphone *; midi *; payment *; serial *; vr *; web-share *; xr-spatial-tracking *&quot;,&quot;iframe_sandbox&quot;:&quot;allow-downloads allow-forms allow-modals allow-pointer-lock allow-popups allow-popups-to-escape-sandbox allow-presentation allow-same-origin allow-scripts allow-top-navigation-by-user-activation&quot;},&quot;__graphql&quot;:{&quot;data&quot;:{&quot;data&quot;:{&quot;sessionUser&quot;:{&quot;id&quot;:&quot;VoDkNZ&quot;,&quot;name&quot;:&quot;Captain Anonymous&quot;,&quot;title&quot;:&quot;Captain Anonymous&quot;,&quot;avatar&quot;:&quot;https://assets.codepen.io/t-1/user-default-avatar.jpg?format=auto&amp;version=0&quot;,&quot;currentContext&quot;:{&quot;id&quot;:&quot;VoDkNZ&quot;,&quot;title&quot;:&quot;Captain Anonymous&quot;,&quot;name&quot;:&quot;Captain Anonymous&quot;,&quot;avatar&quot;:&quot;https://assets.codepen.io/t-1/user-default-avatar.jpg?format=auto&amp;version=0&quot;,&quot;username&quot;:&quot;anon&quot;,&quot;__typename&quot;:&quot;User&quot;},&quot;currentTeamId&quot;:null,&quot;username&quot;:&quot;anon&quot;,&quot;admin&quot;:false,&quot;anon&quot;:true,&quot;pro&quot;:false,&quot;verified&quot;:false,&quot;featureFlags&quot;:[],&quot;teams&quot;:[],&quot;__typename&quot;:&quot;User&quot;}}},&quot;url&quot;:&quot;https://codepen.io/graphql&quot;,&quot;api&quot;:&quot;cprails&quot;},&quot;__user&quot;:{&quot;anon&quot;:true,&quot;base_url&quot;:&quot;/anon/&quot;,&quot;cohorts&quot;:[],&quot;current_team_hashid&quot;:null,&quot;current_team_id&quot;:0,&quot;hashid&quot;:&quot;VoDkNZ&quot;,&quot;id&quot;:1,&quot;itemType&quot;:&quot;user&quot;,&quot;name&quot;:&quot;Captain Anonymous&quot;,&quot;paid&quot;:false,&quot;tier&quot;:0,&quot;username&quot;:&quot;anon&quot;,&quot;created_at&quot;:null,&quot;email_verified&quot;:null,&quot;collections_count&quot;:0,&quot;collections_private_count&quot;:0,&quot;followers_count&quot;:0,&quot;followings_count&quot;:0,&quot;pens_count&quot;:0,&quot;pens_private_count&quot;:0,&quot;projects_count&quot;:0,&quot;projects_private_count&quot;:0},&quot;__firebase&quot;:{&quot;config&quot;:{&quot;apiKey&quot;:&quot;AIzaSyBgLAe7N_MdFpuVofMkcQLGwwhUu5tuxls&quot;,&quot;authDomain&quot;:&quot;codepen-store-production.firebaseapp.com&quot;,&quot;databaseURL&quot;:&quot;https://codepen-store-production.firebaseio.com&quot;,&quot;disabled&quot;:false,&quot;projectId&quot;:&quot;codepen-store-production&quot;},&quot;token&quot;:&quot;eyJhbGciOiJSUzI1NiJ9.eyJhdWQiOiJodHRwczovL2lkZW50aXR5dG9vbGtpdC5nb29nbGVhcGlzLmNvbS9nb29nbGUuaWRlbnRpdHkuaWRlbnRpdHl0b29sa2l0LnYxLklkZW50aXR5VG9vbGtpdCIsImNsYWltcyI6eyJvd25lcklkIjoiVm9Ea05aIiwiYWRtaW4iOmZhbHNlfSwiZXhwIjoxNzU4NzAwMDYyLCJpYXQiOjE3NTg2OTY0NjIsImlzcyI6ImZpcmViYXNlLWFkbWluc2RrLThva3lsQGNvZGVwZW4tc3RvcmUtcHJvZHVjdGlvbi5pYW0uZ3NlcnZpY2VhY2NvdW50LmNvbSIsInN1YiI6ImZpcmViYXNlLWFkbWluc2RrLThva3lsQGNvZGVwZW4tc3RvcmUtcHJvZHVjdGlvbi5pYW0uZ3NlcnZpY2VhY2NvdW50LmNvbSIsInVpZCI6IlZvRGtOWiJ9.5KN0WmGBNP-zjF8AQS8szpqy8fANRn6TDZiyWgjzJQQMCeTW6VBE9Jmn3j27JqWI4k4TesqOHTouPo7_90ga7oQOSGgS7_sFcA0WaCap4KQtqmV7xG9HRrnCnzRkuwjZNlwnW23xYdV0zbM7S67Xkn8BH5jENcDDh6dOCtyf-6TbQZrAklLot26Pg6E1qGavPQ0g1F5WQZxjNUYGChXAvwOQhG1GW8G05G8rgbFzvMymmnruhW5mcio66CtBfnr7hEZV-Z4vNgVfH4IO_fF-eXt2MmUcb6vctWI9rir2Kt41JDnX-PeocJEUGsthgkl1SL73abk5mNppbMJMaC0XXA&quot;},&quot;__pay_stripe_public_key&quot;:&quot;pk_live_2GndomDfiklqpSNQn8FrGuwZSMIMzha7DkLJqlYe7IR0ihKAlKdiHg68JJc5eVPt68rzAjzAAVXcUwjySHRCsgjQQ00gtRBUFNH&quot;,&quot;__pay_braintree_env&quot;:&quot;production&quot;,&quot;__item&quot;:&quot;{\&quot;id\&quot;:84287922,\&quot;hashid\&quot;:\&quot;OPMPjmx\&quot;,\&quot;itemType\&quot;:\&quot;pen\&quot;,\&quot;user_id\&quot;:15459666,\&quot;slug_hash\&quot;:\&quot;OPMPjmx\&quot;,\&quot;private\&quot;:false,\&quot;slug_hash_private\&quot;:\&quot;f75bdba50897d2d46a8ad4319ae7773a\&quot;}&quot;,&quot;__profiled&quot;:{&quot;base_url&quot;:&quot;/ferrannl&quot;,&quot;hashid&quot;:&quot;znGqqm&quot;,&quot;id&quot;:15459666,&quot;name&quot;:&quot;ferrannl&quot;,&quot;type&quot;:&quot;user&quot;,&quot;username&quot;:&quot;ferrannl&quot;},&quot;__pageType&quot;:&quot;full&quot;}</textarea>
+
+  <div id="popup-overlay" class="overlay popup-overlay"></div>
+  <div id="modal-overlay" class="overlay modal-overlay"></div>
+
+  <script src="https://cpwebassets.codepen.io/assets/common/everypage-c0439686246cf4a1465a9bf7bcc4b0a7a720b9724e1e14b3aa3bec47880049c4.js"></script>
+  <script src="https://cpwebassets.codepen.io/assets/packs/js/referrer-tracking-65d0084b51322430df03.js"></script>
+
+
+  <script src="https://cpwebassets.codepen.io/assets/packs/js/vendor-c0ebc3387c0b4cb84390.chunk.js"></script>
+<script src="https://cpwebassets.codepen.io/assets/packs/js/3-8a17fd0157cfc82fcf25.chunk.js"></script>
+<script src="https://cpwebassets.codepen.io/assets/packs/js/everypage-eb8b76c32a8f6fffff4d.js"></script>
+  <script src="https://cpwebassets.codepen.io/assets/editor/full/full_page_renderer-5c5f4d03e4aca2a97df9e03dfc8ed9d048628ec94b84fe63e060b0276d8862f7.js"></script>
+<script nonce="AKB3mdXf2Nw=">(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.nonce='AKB3mdXf2Nw=';d.innerHTML="window.__CF$cv$params={r:'984054fa39c70eac',t:'MTc1ODY5NjQ2Mi4wMDAwMDA='};var a=document.createElement('script');a.nonce='AKB3mdXf2Nw=';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+
+</html>
